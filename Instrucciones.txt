@@ -1,0 +1,28 @@
+- Nombre función: AutoPGA
+- Versión: 1.0
+- Descripción: A partir de un punto (epicentro), una magnitud y profundidad, se calcula el detonador sísmico para un área (extensión) determinada.
+- Proceso: 
+	1. Cálculo distancia Euclidia (metros) a partir del epicentro.
+		. Extensión: área donde se van a realizar los cálculos.
+		. Tamaño px: definido según la resolución del raster, 10 m.
+		. Punto epicentro: primer punto de ruptura del sismo.
+	2. Conversión distancia Euclidia a kilómetros.
+	3. Cálculo distancia Hipocentral (km).
+		. Profundidad sismo (km): profundidad del sismo.
+	4. Cálculo PGAa.
+		. Magnitud (Mw): magnitud del sismo.
+	5. Cálculo Earthtrigger.
+
+---------------------------------------
+
+
+- Directorio principal: C:\AutoPGA\
+
+- Carpeta de epicentro: C:\AutoPGA\Epicentro
+	Un shape de algún punto.
+
+- Carpeta de extensión: C:\AutoPGA\Extension
+	El punto del epicentro debe estar dentro del área de extensión.
+
+- Carpeta de resultados: C:\AutoPGA\Output
+	Debe eliminarse el contenido de la carpeta luego de cada ejecución.
